@@ -4,13 +4,10 @@ require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/secrets.php';
 
 ## imgur settings
-$imgur_api_key = "664b883ed09c619";
-$imgur_api_secret = "80811e5bbe964e98fc13f116f168397e293b6128";
 $imgur = new \adamroe\Imgur\API($imgur_api_key, $imgur_api_secret);
 
 ## bit.ly settings
 $use_bitly = true;
-$bitly_api_key = "b45838126cafa96dd51ae3e00d13d6de76004d36";
 $bitly = new \Hpatoio\Bitly\Client($bitly_api_key);
 
 
@@ -50,7 +47,6 @@ if (isset($_GET['method'])) {
 		echo "<br/><br/><br/><center><h1>";
 	    // GET parameter doesn't exist, so we will have to ask user to allow access for our application
 	    $imgur->authorize();
-		// for adam bac9a8438ba318abebe3a9b1b96a4ef1d3db45c9
 	}
 }
 
