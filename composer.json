@@ -1,0 +1,6 @@
+{
+    "require": {
+        "adamroe/php-imgur": "^1.0",
+        "hpatoio/bitly-api": "~2.0"
+    }
+}
